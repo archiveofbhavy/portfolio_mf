@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Poetry</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Poetry Wing — Bhavy's Archive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="poetry-page">
 
-  <section class="intro-section">
-    <h1 class="intro-title serif">Poetry</h1>
-    <p class="intro-subtitle serif">This section is under construction.</p>
-    <a href="index.html">← Back to Archive</a>
-  </section>
+  <!-- PAPER TEXTURE OVERLAY -->
+  <div class="poetry-texture"></div>
+
+  <!-- BACK LINK -->
+  <a href="index.html" class="poetry-back">
+    <span class="poetry-back-arrow">←</span>
+    <span>Archive</span>
+  </a>
+
+  <!-- HEADER SECTION -->
+  <header class="poetry-header">
+    <h1 class="poetry-title serif">The Poetry Wing</h1>
+    <p class="poetry-description serif">
+      A collection of verses that capture moments, thoughts, and the quiet spaces between words. 
+      Each piece is a window into contemplation, written with care and read with intention.
+    </p>
+  </header>
+
+  <!-- CATEGORY SELECTION -->
+  <main class="poetry-container">
+    
+    <a href="poetry-descent.html" class="poetry-category">
+      <div class="poem-metadata">
+        <span class="poem-number">NO. I</span>
+        <span class="poem-line"></span>
+      </div>
+      <h2 class="poem-title serif">Descent</h2>
+      <p class="poetry-category-description serif">Poems born from loss, emptiness, surrender, and existence.</p>
+      <div class="poem-ending"></div>
+    </a>
+
+    <a href="poetry-devotion.html" class="poetry-category">
+      <div class="poem-metadata">
+        <span class="poem-number">NO. II</span>
+        <span class="poem-line"></span>
+      </div>
+      <h2 class="poem-title serif">Devotion</h2>
+      <p class="poetry-category-description serif">Poems written in love, longing, attachment, and eternity.</p>
+      <div class="poem-ending"></div>
+    </a>
+
+  </main>
 
 </body>
 </html>
-
