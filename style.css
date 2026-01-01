@@ -840,6 +840,25 @@
   display: none; /* Removed titles between designs for cleaner flow */
 }
 
+/* SKETCHES ARCHIVE LINK */
+.sketches-archive-link {
+  display: block;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1E1E1E;
+  text-decoration: none;
+  margin-top: 32px;
+  letter-spacing: 0.01em;
+  transition: opacity 0.3s ease;
+}
+
+.sketches-archive-link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 /* VELO GALLERY CAPTIONS */
 .velo-gallery-caption {
   margin-top: 24px;
