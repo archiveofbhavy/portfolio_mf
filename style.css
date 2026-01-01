@@ -825,6 +825,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .wezz-gallery-image img {
@@ -837,6 +838,82 @@
 
 .wezz-gallery-meta {
   display: none; /* Removed titles between designs for cleaner flow */
+}
+
+/* VELO GALLERY CAPTIONS */
+.velo-gallery-caption {
+  margin-top: 24px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.velo-caption-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.velo-caption-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #1E1E1E;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.velo-caption-text.velo-closing {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* ADMIN CAPTIONS AND MICRO-LABELS */
+.admin-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  text-align: center;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  z-index: 3;
+  background: rgba(243, 240, 234, 0.75);
+  padding: 10px 18px;
+}
+
+.wezz-gallery-item:hover .admin-caption {
+  opacity: 0.9;
+}
+
+.admin-micro-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 3;
+  background: rgba(243, 240, 234, 0.5);
+  padding: 3px 6px;
 }
 
 /* FOOTER */
